@@ -1,0 +1,23 @@
+body {
+    background-color: #e9edf1;
+  }
+  
+  .navbar {
+    background-color: #f8f9fa;
+  }
+  
+  .form-section {
+    background-color: #dfe4ea;
+    padding: 50px 20px;
+  }
+  
+  .card img {
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .tech-icons i {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  

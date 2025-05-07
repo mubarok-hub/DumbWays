@@ -1,0 +1,114 @@
+span {
+    background-color: black;       /* Ngewarnain latar belakang teks jadi hitam */
+    color: white;                  /* Warna teks jadi putih */
+    padding: 5px;                  /* Ngasih ruang dalam di semua sisi (atas, bawah, kiri, kanan) */
+    border-radius: 10px;           /* Bikin ujung kotak nya melengkung */
+    display: inline-block;         /* Biar padding & background bisa jalan di elemen teks */
+    margin-left: 10px;            /* Ngasih jarak dari elemen di sebelah kirinya */
+}
+
+
+.containerbox {
+    background-color: white;       /* Latar kotak konten putih */
+    width: 90%;                    /* Lebarnya 90% dari lebar layar */
+    max-width: 600px;              /* Tapi maksimal cuma 600px, biar nggak terlalu lebar di layar besar */
+    margin: 0 auto;                /* Tengahin kotak secara horizontal */
+    text-align: left;              /* Semua isi teksnya rata kiri */
+    padding: 20px;                 /* Ngasih ruang di dalam kotak */
+}
+
+
+p {
+    width: 90%;                    /* Sama kayak container, biar sejajar */
+    max-width: 600px;              /* Maksimal 600px */
+    text-align: justify;           /* Rata kiri kanan biar paragrafnya rapi */
+}
+
+
+body {
+    text-align: center;            /* Semua isi body ditengahin (untuk elemen yang inline atau inline-block) */
+    padding: 100px;                /* Jarak kosong di sekeliling halaman */
+    background-color: aliceblue;   /* Warna latar belakang halaman biru muda */
+}
+
+
+.contact {
+    display: inline-block;         /* Biar bisa diatur padding dan dimensinya */
+    background-color: black;       /* Warna tombol hitam */
+    color: white;                  /* Teks di tombol putih */
+    padding-top: 5px;              /* Jarak atas dalam tombol */
+    padding-bottom: 5px;           /* Jarak bawah dalam tombol */
+    padding-left: 25px;            /* Jarak kiri dalam tombol */
+    padding-right: 25px;           /* Jarak kanan dalam tombol */
+    border-radius: 50px;           /* Bikin tombolnya bulat lonjong */
+    text-decoration: none;         /* Ngilangin garis bawah dari link */
+}
+
+
+img {
+    display: block;                /* Ubah gambar jadi block biar bisa dimargin tengah */
+    margin: 20px auto;             /* Jarak atas bawah 20px, kiri kanan auto buat gambar ke tengah */
+}
+
+
+
+.iconsosmed {
+    text-align: center;            /* Biar semua icon di dalamnya ke tengah */
+    margin-top: 20px;              /* Kasih jarak dari elemen atasnya */
+}
+
+
+.iconsosmed i {
+    font-size: 24px;               /* Ukuran icon 24px */
+    margin-top: 10px;              /* Jarak atas antar icon */
+    margin-bottom: 1px;            /* Jarak bawah kecil aja */
+    margin-left: 2px;              /* Jarak antar icon kiri */
+    margin-right: 2px;             /* Jarak antar icon kanan */
+}
+
+
+.klip {
+    display: inline-flex;          /* Flexbox horizontal tapi ukurannya menyesuaikan isi */
+    flex-direction: column;        /* Biar elemen anaknya ditumpuk ke bawah */
+    align-items: center;           /* Semua isi ditengah-tengah */
+    border: 1px solid #ddd;        /* Bikin garis tepi abu-abu terang */
+    padding: 0px;                  /* Nggak kasih ruang dalam (karena udah pas) */
+    margin-left: auto;             /* Tengahin horizontal */
+    margin-right: auto;
+    width: max-content;            /* Ukurannya ngikutin konten di dalamnya */
+    margin-top: 20px;              /* Jarak dari atas */
+    border-radius: 8px;            /* Ujung kotaknya agak melengkung */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Efek bayangan bawah */
+}
+
+
+.klip img {
+    display: block;                /* Biar nggak ada ruang bawah default */
+    width: 250px;                  /* Ukuran gambar tetap */
+    height: 280px;                 /* Tinggi tetap juga */
+    object-fit: cover;             /* Ngepasin gambar biar gak gepeng dan tetap rapi */
+    margin: 0;                     /* Buang semua margin default */
+}
+
+
+.text {
+    text-align: center;            /* Tengahin teks nama dan pekerjaan */
+    margin-top: 5px;               /* Jarak atas dari gambar */
+    margin-bottom: 5px;            /* Jarak bawah biar gak nempel elemen lain */
+}
+
+
+.text h3 {
+    margin: 0;                     /* Buang margin default bawaan heading */
+    font-size: 20px;               /* Ukuran teks nama */
+}
+
+
+.text small {
+    color: gray;                   /* Warna teks jabatan abu-abu */
+}
+
+
+.bungkusklip {
+    text-align: center;            /* Tengahin kotak klip */
+}

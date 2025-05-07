@@ -1,0 +1,178 @@
+/* ngereset */
+* {
+  box-sizing: border-box; /* semua elemen pake border-box biar enak ngatur padding dan bordernya */
+}
+
+body {
+  margin: 0; /* ngapus margin bawaan biar nggak ganggu */
+  font-family: 'Inter', 'Arial', sans-serif; 
+  background-color: rgb(247, 244, 244);
+
+}
+
+/* Header */
+header {
+  background: rgb(236, 233, 233);
+  padding: 16px 32px; /* kasih padding biar enak diliat */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* biar ada bayangan alus sedikit di head nya  */
+  overflow: hidden; /* supaya gada yang keluar dari daerah headnya */
+  text-align: center; /*biar rata tengah bagian heading nya*/
+}
+
+.header-left {
+  float: left; /* logodumbways */
+}
+
+.logo {
+  font-weight: bold; 
+  color: red; 
+  margin-right: 32px; /* ngasih jarak di kanan logo */
+}
+
+nav {
+  display: inline-block; /* biar navigasinya tampil di sebelah logo */
+}
+
+nav a {
+  margin-right: 25px; /* jarak antara link */
+  color: black;
+  text-decoration: none; /* ngilangin garis bawah linknya */
+  font-weight: 500; /* di tebelin dikit*/
+}
+
+nav a.home {
+    font-family: 'Poppins';
+    font-weight: 800;
+
+}
+
+.botton-contact {
+  float: right; /* biar di kanan */
+  background-color: black;
+  color: white;
+  padding: 8px 16px; /* biar teksnya d tengah otak */
+  border-radius: 8px; /* sudut nya biar tumpul */
+  text-decoration: none; /* ilangin garis bawah */
+  font-size: 14px; /* ukuran font tombol pas */
+}
+
+/* Main Container */
+.container {
+  max-width: 1000px; /* bates lebar kontener biar g kegedean */
+  margin: 48px auto; /* rapi ke tengah dengan margin atas-bawah */
+  background: white;
+  padding: 32px; /* biar nyaman */
+  border-radius: 10px; /* sudut kontenernya tumpul */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1); /* bayangan dikit*/
+  /*https://cssgenerator.org/box-shadow-css-generator.html#google_vignette*/
+  overflow: hidden; /* biar gada yang keluar dari kontener */
+}
+
+/* left & right kolom make float */
+.container-left {
+  float: left; /* kolom kiri ke kiri */
+  width: 65%; /* lebar kolom kiri 65% */
+  min-width: 280px; /* minimal lebar kolom kiri/ biar lebih responsif di pc dan hp */
+}
+
+.container-left p {
+  text-align: justify; /*rata kirikanan */
+  font-size: 12px;
+}
+
+.container-right {
+  float: right; /* Kolom kanan ke kanan */
+  width: 30%; /* Lebar kolom kanan 30% */
+  min-width: 250px; /* Minimal lebar kolom kanan/ biar lebih responsif di pc dan hp */
+}
+
+/* Left Content */
+.container-left h1 {
+  margin-top: 0;/*kalo ga di margin dia malah naik*/
+}
+
+.container-left p {
+  line-height: 1.6; /* baris renggang atas bawah nya */
+  color: black;
+}
+
+.buttons {
+  margin: 16px 0;/*jakar tombol */
+}
+
+.buttons a {
+  display: inline-block; /* tombol jadi inline-block */
+  text-decoration: none; /* ngilangin garis bawah */
+  margin-right: 16px; /* jarak kanan antar tombol */
+  padding: 8px 16px; /* jarak tulisan ke tengah tombol */
+  border-radius: 50px; /* tombol tumpul */
+}
+
+.botton-dark {
+  background-color: black; 
+  color: white;
+}
+
+/* Social Icons */
+.socials {
+  margin-top: 16px; /* jarak icon sosmed*/
+}
+
+.socials i {
+  margin-right: 15px; /* jarak antara ikon sosmed*/
+  font-size: 19px; /* ukuran ikon sosmed lebih gede */
+  color: black;
+}
+
+.container1 {
+    margin-top: 30px; /* jarak atas di contener1 */
+    margin-bottom: 30px; /* jarak bawah di contener1 */
+}
+  
+.container2 {
+    margin-top: 40px; /* jarak atas di contener2 */
+    margin-bottom: 40px; /* jarak bawah di contener2 */
+}
+
+/* Profile Card */
+.profile-card {
+  background: white;
+  border-radius: 10px; /* sudut tumpul */
+  overflow: hidden; /* biar gada elemen yang keluar dari kartu */
+  text-align: center; /* tulisan nya di tengah */
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* bayangan dikit*/
+  /*https://cssgenerator.org/box-shadow-css-generator.html#google_vignette*/
+}
+
+.profile-card img {
+  width: 100%; /* gambar menuhin lebar kartu profil */
+  display: block; /* ngilangin spasi di bawah gambar */
+}
+
+.profile-card h3 {
+  margin: 8px 0 0; /* jarak atas dan bawah di h3 */
+}
+
+.profile-card p {
+  margin: 0 0 16px; /* jarak di p */
+  color: gray; 
+}
+
+/* Responsive (stack columns) */
+@media (max-width: 768px) {
+  .container-left, .container-right { /* ngilangin float di kolom kiri dan kanan */
+    width: 100%; /* lebar kolom jadi 100% */
+  }
+
+  header {
+    text-align: center; /* tulisan di header jadi ke tengah */
+  }
+
+  .header-left, .btn-contact {
+    float: none; /* Hilangin float di header-left dan btn-contact */
+    display: block; /* Jadikan elemen blok */
+    margin: 8px auto; /* Margin tengah otomatis */
+  }
+}
+
+

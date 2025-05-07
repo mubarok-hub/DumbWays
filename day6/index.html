@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>day 6</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg px-4 shadow-sm">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+    
+        <!-- kiri Logo + Menu -->
+        <div class="d-flex align-items-center gap-4">
+        <a class="navbar-brand fw-bold text-danger" href="#">Dumbways.id</a>
+        <a class="nav-link fw-semibold text-dark" href="#">Home</a>
+        <a class="nav-link fw-semibold text-dark" href="#">My Project</a>
+        </div>
+    
+        <!-- tombol -->
+        <a href="#" class="btn btn-dark px-4">Contact Me</a>
+    
+    </div>
+    </nav>
+  <!-- Form Section -->
+  <section class="form-section text-center">
+    <div class="container">
+      <h2 class="mb-4 fw-bold">ADD MY PROJECT</h2>
+      <form id="projectForm">
+        <div class="mb-3 text-start">
+          <label for="projectName" class="form-label">Project Name</label>
+          <input type="text" class="form-control" id="projectName" required />
+        </div>
+        <div class="row mb-3 text-start">
+          <div class="col-md-6">
+            <label for="startDate" class="form-label">Start Date</label>
+            <input type="date" class="form-control" id="startDate" required />
+          </div>
+          <div class="col-md-6">
+            <label for="endDate" class="form-label">End Date</label>
+            <input type="date" class="form-control" id="endDate" required />
+          </div>
+        </div>
+        <div class="mb-3 text-start">
+          <label for="description" class="form-label">Description</label>
+          <textarea class="form-control" rows="4" id="description" required></textarea>
+        </div>
+        <div class="mb-3 text-start">
+          <label class="form-label d-block">Technologies</label>
+          <div class="form-check form-check-inline"><input class="form-check-input tech" type="checkbox" value="Node Js" id="tech1" /><label class="form-check-label" for="tech1">Node Js</label></div>
+          <div class="form-check form-check-inline"><input class="form-check-input tech" type="checkbox" value="React Js" id="tech2" /><label class="form-check-label" for="tech2">React Js</label></div>
+          <div class="form-check form-check-inline"><input class="form-check-input tech" type="checkbox" value="Next Js" id="tech3" /><label class="form-check-label" for="tech3">Next Js</label></div>
+          <div class="form-check form-check-inline"><input class="form-check-input tech" type="checkbox" value="TypeScript" id="tech4" /><label class="form-check-label" for="tech4">TypeScript</label></div>
+        </div>
+        <div class="mb-3">
+            <label for="projectImage" class="form-label">Upload Image</label>
+            <div class="input-group">
+              <input type="file" class="form-control" id="projectImage" name="projectImage">
+              <span class="input-group-text"><i class="fas fa-paperclip"></i></span>
+            </div>
+          </div>  
+        <button type="submit" class="btn btn-dark px-4">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Project Cards -->
+  <section class="py-5 bg-white">
+    <div class="container">
+      <h2 class="text-center mb-5 fw-bold">MY PROJECT</h2>
+      <div class="row g-4" id="projectList">
+        <!-- Project cards akan muncul di sini via JS -->
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+  
+</body>
+</html>
